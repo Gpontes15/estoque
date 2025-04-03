@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: meu-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: estoque
+      POSTGRES_PASSWORD: 1508
+      POSTGRES_DB: estoque
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "estoque"]
+      interval: 10s
+      retries: 5
+
+  app:
+    build: .
+    container_name: minha-aplicacao
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://meu-postgres:5432/estoque
+      SPRING_DATASOURCE_USERNAME: estoque
+      SPRING_DATASOURCE_PASSWORD: 1508
+      SPRINGDOC_API_DOCS_ENABLED: "true"
+      SPRINGDOC_SWAGGER_UI_ENABLED: "true"
+      SPRINGDOC_SWAGGER_UI_PATH: "/swagger-ui.html"
+      SPRINGDOC_API_DOCS_PATH: "/v3/api-docs"
+    ports:
+      - "8080:8080"
+
+volumes:
+  pgdata:

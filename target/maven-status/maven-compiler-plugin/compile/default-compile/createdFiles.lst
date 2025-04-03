@@ -1,0 +1,5 @@
+com/estoque/repository/ItemRepository.class
+com/estoque/EstoqueApplication.class
+com/estoque/service/ItemService.class
+com/estoque/model/Item.class
+com/estoque/controller/ItemController.class
