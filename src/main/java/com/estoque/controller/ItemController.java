@@ -1,37 +1,24 @@
 package com.estoque.controller;
 
 import com.estoque.model.Item;
-import com.estoque.service.ItemService;
+import com.estoque.kafka.ItemProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/itens")
 public class ItemController {
 
     @Autowired
-    private ItemService itemService;
+    private ItemProducer itemProducer;
 
     @GetMapping
-    public List<Item> listarItens() {
-        return itemService.listarItens();
-    }
-
-    @GetMapping("/{codigo}")
-    public Optional<Item> buscarPorCodigo(@PathVariable String codigo) {
-        return itemService.buscarPorCodigo(codigo);
+    public String status() {
+        return "🟢 API de Estoque está no ar!";
     }
 
     @PostMapping
-    public Item criarItem(@RequestBody Item item) {
-        return itemService.salvarItem(item);
-    }
-
-    @DeleteMapping("/{id}")
-    public void deletarItem(@PathVariable Long id) {
-        itemService.deletarItem(id);
+    public void criarItem(@RequestBody Item item) {
+        itemProducer.enviarItem(item);  // envia pro Kafka (não salva direto no banco)
     }
 }
