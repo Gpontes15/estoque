@@ -22,7 +22,7 @@ public class ItemService {
         return itemRepository.findByCodigo(codigo);
     }
 
-    public Item salvarItem(Item item) {
+    public Item save(Item item) {
         return itemRepository.save(item);
     }
 

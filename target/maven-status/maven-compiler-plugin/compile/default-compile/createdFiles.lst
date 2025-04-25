@@ -1,5 +1,14 @@
+com/estoque/model/User.class
 com/estoque/repository/ItemRepository.class
-com/estoque/EstoqueApplication.class
 com/estoque/service/ItemService.class
+com/estoque/kafka/ItemProducer.class
+com/estoque/controller/UserController.class
+com/estoque/consumer/ItemConsumer.class
+com/estoque/UserEvent.class
+com/estoque/service/UserService.class
+com/estoque/EstoqueApplication.class
+com/estoque/consumer/UserConsumer.class
+com/estoque/kafka/UserProducer.class
 com/estoque/model/Item.class
+com/estoque/repository/UserRepository.class
 com/estoque/controller/ItemController.class
