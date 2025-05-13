@@ -1,3 +1,4 @@
+com/estoque/config/WebConfig.class
 com/estoque/model/User.class
 com/estoque/repository/ItemRepository.class
 com/estoque/service/ItemService.class
@@ -5,6 +6,7 @@ com/estoque/kafka/ItemProducer.class
 com/estoque/controller/UserController.class
 com/estoque/consumer/ItemConsumer.class
 com/estoque/UserEvent.class
+com/estoque/config/WebConfig$1.class
 com/estoque/service/UserService.class
 com/estoque/EstoqueApplication.class
 com/estoque/consumer/UserConsumer.class

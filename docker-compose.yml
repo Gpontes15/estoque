@@ -63,6 +63,11 @@ services:
       context: ./frontend
     ports:
       - "3000:3000"
+    volumes:
+      - ./frontend:/app
+    command: npm run dev
+    environment:
+      - NEXT_PUBLIC_API_URL=http://minha-aplicacao:8080
 
 volumes:
   pgdata:

@@ -1,5 +1,6 @@
 /mnt/c/Users/Administrator/Documents/GitHub/estoque/src/main/java/com/estoque/EstoqueApplication.java
 /mnt/c/Users/Administrator/Documents/GitHub/estoque/src/main/java/com/estoque/UserEvent.java
+/mnt/c/Users/Administrator/Documents/GitHub/estoque/src/main/java/com/estoque/config/WebConfig.java
 /mnt/c/Users/Administrator/Documents/GitHub/estoque/src/main/java/com/estoque/consumer/ItemConsumer.java
 /mnt/c/Users/Administrator/Documents/GitHub/estoque/src/main/java/com/estoque/consumer/UserConsumer.java
 /mnt/c/Users/Administrator/Documents/GitHub/estoque/src/main/java/com/estoque/controller/ItemController.java

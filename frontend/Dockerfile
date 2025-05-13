@@ -19,5 +19,5 @@ RUN npm run build
 # Expõe a porta que o Next.js usará
 EXPOSE 3000
 
-# Inicializa o servidor
-CMD ["npm", "start"]
+# Inicializa o servidor (modo produção)
+CMD ["npm", "run", "start"]
