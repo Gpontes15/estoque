@@ -3,11 +3,15 @@
 /mnt/c/Users/Gabriel/Documents/GitHub/estoque/src/main/java/com/estoque/config/WebConfig.java
 /mnt/c/Users/Gabriel/Documents/GitHub/estoque/src/main/java/com/estoque/consumer/ItemConsumer.java
 /mnt/c/Users/Gabriel/Documents/GitHub/estoque/src/main/java/com/estoque/controller/ItemController.java
+/mnt/c/Users/Gabriel/Documents/GitHub/estoque/src/main/java/com/estoque/controller/ServiceOfferingController.java
 /mnt/c/Users/Gabriel/Documents/GitHub/estoque/src/main/java/com/estoque/controller/UserController.java
 /mnt/c/Users/Gabriel/Documents/GitHub/estoque/src/main/java/com/estoque/kafka/ItemProducer.java
 /mnt/c/Users/Gabriel/Documents/GitHub/estoque/src/main/java/com/estoque/model/Item.java
+/mnt/c/Users/Gabriel/Documents/GitHub/estoque/src/main/java/com/estoque/model/ServiceOffering.java
 /mnt/c/Users/Gabriel/Documents/GitHub/estoque/src/main/java/com/estoque/model/User.java
 /mnt/c/Users/Gabriel/Documents/GitHub/estoque/src/main/java/com/estoque/repository/ItemRepository.java
+/mnt/c/Users/Gabriel/Documents/GitHub/estoque/src/main/java/com/estoque/repository/ServiceOfferingRepository.java
 /mnt/c/Users/Gabriel/Documents/GitHub/estoque/src/main/java/com/estoque/repository/UserRepository.java
 /mnt/c/Users/Gabriel/Documents/GitHub/estoque/src/main/java/com/estoque/service/ItemService.java
+/mnt/c/Users/Gabriel/Documents/GitHub/estoque/src/main/java/com/estoque/service/ServiceOfferingService.java
 /mnt/c/Users/Gabriel/Documents/GitHub/estoque/src/main/java/com/estoque/service/UserService.java
